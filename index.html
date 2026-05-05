@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>KIME Careers - Calculate Your Degree ROI</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Calculate your degree ROI in 30 seconds with KIME Careers AI-powered calculator. Compare universities and plan your career smarter.">
+    <meta name="author" content="KIME Careers">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="kime-logo.jpg">
+
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KIME Careers - Calculate Your Degree ROI">
+    <meta property="og:description" content="Calculate your degree ROI in 30 seconds with KIME Careers AI-powered calculator. Compare universities and plan your career smarter.">
+    <meta property="og:image" content="/career-roi-calculator/kime-logo.jpg">
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KIME Careers - Calculate Your Degree ROI">
+    <meta name="twitter:description" content="Calculate your degree ROI in 30 seconds with KIME Careers AI-powered calculator. Compare universities and plan your career smarter.">
+    <meta name="twitter:image" content="/career-roi-calculator/kime-logo.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css"></style>
+</head>
+<body>
+  <div id="root">
+  
+  <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+    <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+  </div>
+<section class="hero">
+    <div class="container">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-left">
+            <span class="badge">
+                     ✨ AI-Powered ROI Calculator</span>
+            <h1>
+                Calculate Your <span>Degree ROI</span> in 30 Seconds
+            </h1>
+
+            <p>
+                Discover how much your degree can earn you after graduation.
+                Make smarter education decisions with our AI-powered ROI
+                calculator.
+            </p>
+
+            <button class="btn">
+                Start ROI Calculator →
+            </button>
+
+            <div class="info">
+                <p>⏱ Takes less than 30 seconds</p>
+                <p>👥 Trusted by 10,000+ students</p>
+            </div>
+        </div>
+
+        <!-- RIGHT CARD -->
+        <div class="hero-right">
+            <div class="card">
+
+                <div class="card-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <p>ROI Calculator Preview</p>
+                </div>
+
+                <div class="card-body">
+
+                    <h4>Select University</h4>
+                    <div class="options">
+                        <button class="active">
+                                    <img src="img/manipal.png" alt="">
+                                    Manipal University</button>
+                        <button>
+                            <img src="img/amity.png" alt="">
+                            Amity University
+                        </button>
+                        <button>
+                            <img src="img/jagannath.png" alt="">
+                            Jagannath University
+                        </button>
+                        <button>
+                            <img src="img/skit.png" alt="">
+                            SKIT University
+                        </button>
+                        <button>
+                            <img src="img/poornima.png" alt="">
+                            Poornima University
+                        </button>
+                        <button>
+                            <img src="img/nmims.png" alt="">
+                            NMIMS University
+                        </button>
+                     </div>
+
+                    <h4>Select Course</h4>
+                    <div class="options small">
+                        <button class="active">MBA</button>
+                        <button>BBA</button>
+                        <button>BCA</button>
+                        <button>Btech</button>
+                        <button>B.A.LLB</button>
+                        <button>BHM</button>
+                    </div>
+
+                    <h4>Expected Salary</h4>
+                    <div class="fake-slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="salary">
+                        <span>₹3 LPA</span>
+                        <span class="center">₹12 LPA</span>
+                        <span>₹30 LPA</span>
+                    </div>
+                    <div class="result">
+                        <p>YOUR ROI SCORE</p>
+                        <h2>8.4 <span>/10</span></h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer class="py-8 border-t border-border/50 text-center text-sm text-muted-foreground">
+            <div class="container mx-auto px-4">© 2026 ROI Calculator. All rights reserved.</div>
+        </footer>
+     
+</div>
+
+
+
+<!-- ROI MODAL -->
+<div class="roi-modal" id="roiModal">
+    <div class="roi-overlay" id="overlay"></div>
+
+    <div class="roi-box">
+
+        <!-- HEADER -->
+        <div class="roi-header">
+            <p id="stepText">Step 1 of 5</p>
+            <span class="close-btn" id="closeModal">✕</span>
+        </div>
+
+        <!-- PROGRESS -->
+        <div class="progress">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="roi-body">
+
+            <!-- STEP 1 -->
+            <div class="step active" id="step1">
+                <h2>Select Your University</h2>
+                <p class="sub">Choose the university you're interested in</p>
+
+                <div class="uni-grid select-card">
+                    <div class="uni-card">
+                        <img src="img/manipal.png" alt="">
+                        Manipal Online
+                        
+                    </div>
+                    <div class="uni-card">
+                        <img src="img/amity.png" alt="">
+                        Amity Online
+                    </div>
+                    <div class="uni-card">
+                        <img src="img/nmims.png" alt="">
+                        NMIMS Online
+                    </div>
+                    <div class="uni-card"> 
+                        <img src="img/dpu.png" alt="">
+                        DPU Online
+                    </div>
+                    <div class="uni-card">
+                        <img src="img/symbiosis.png" alt="">
+                        Symbiosis Online
+                    </div>
+                    <div class="uni-card">
+                        <img src="img/ignou.png" alt="">
+                        IGNOU Online
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step" id="step2">
+                <h2>Select Your Course</h2>
+                <p class="sub">Pick the course you want to pursue</p>
+
+                <div class="uni-grid select-card">
+                    <div class="uni-card">MBA
+                        <span class="year">2 Years</span>
+                    </div>
+                    <div class="uni-card">BBA
+                        <span class="year">2 Years</span>
+                    </div>
+                    <div class="uni-card">BCom
+                        <span class="year">3 Years</span>
+                    </div>
+                    <div class="uni-card">MCom
+                        <span class="year">2 Years</span>
+                    </div>
+                    <div class="uni-card">BSc
+                        <span class="year">3 Years</span>
+                    </div>
+                    <div class="uni-card">BCA
+                        <span class="year">3 Years</span>
+                    </div>
+                    <div class="uni-card">MCA
+                        <span class="year">2 Years</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+     <div class="step" id="step3">
+    <h2>Salary Information</h2>
+    <p class="sub">Help us understand your current salary and industry</p>
+
+    <!-- SALARY LABEL -->
+    <p class="label">What is your current monthly salary?</p>
+
+    <!-- RANGE LABELS -->
+     
+    <div class="range-labels">
+
+             <span>₹0</span>
+             <span class="center-text" id="salaryValue">Fresher</span>
+             <span>₹1,50,000+</span>
+         </div>
+
+   <input type="range" min="0" max="150000" value="0" class="slider" id="salaryRange">
+
+    <!-- INDUSTRY -->
+    <p class="label">What is your current industry?</p>
+
+    <select class="dropdown">
+        <option>Select your industry</option>
+        <option>Marketing</option>
+        <option>Finance</option>
+        <option>HR & Operations</option>
+        <option>Business Analytics</option>
+        <option>Sales</option>
+        <option>IT</option>
+        <option>Others</option>
+    </select>
+</div>
+
+            <!-- STEP 4 -->
+            <div class="step" id="step4">
+                <h2>Work Experience</h2>
+                <p class="sub">Select your current experience level</p>
+
+                <div class="uni-grid select-card">
+                    <div class="uni-card">Fresher</div>
+                    <div class="uni-card">1–3 Years</div>
+                    <div class="uni-card">3–5 Years</div>
+                    <div class="uni-card">5–10 Years</div>
+                    <div class="uni-card">10+ Years</div>
+                </div>
+            </div>
+
+            <!-- STEP 5 -->
+             <div class="step" id="step5">
+                   <h2>Unlock Your ROI Report</h2>
+                   <p class="sub">Your personalized ROI report is almost ready.</p>
+                    <div class="form-group">
+                      <input type="text" placeholder="Full Name" required>
+                   </div>
+                   <div class="form-group">
+                      <input type="email" placeholder="Email Address" required>
+                   </div>
+                   <div class="form-group">
+                     <input type="tel" placeholder="+91 Phone Number" required>
+                   </div>
+              </div>
+
+            <!-- FOOTER -->
+            <div class="modal-footer">
+                <button class="cancel-btn" id="backBtn"> ⬅Back</button>
+                <button class="next-btn" id="nextBtn" disabled>Next →</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--======= script====== -->
+
+<script src="js/script.js"></script>
+<script src="js/submit.js"></script>
+</body>
+</html>
