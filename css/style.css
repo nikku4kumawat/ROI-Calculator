@@ -231,26 +231,37 @@ body {
 }
 
 /* RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
+    /* ❌ horizontal scroll fix */
     html, body {
         overflow-x: hidden;
     }
 
+    /* container fix */
     .container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         gap: 25px;
         width: 100%;
         padding: 0 12px;
     }
 
+    /* hero spacing */
     .hero {
         padding: 40px 0;
     }
 
+    /* left content */
+    .hero-left {
+        width: 100%;
+    }
+
     .hero-left h1 {
         font-size: 26px;
+        line-height: 1.3;
     }
 
     .hero-left p {
@@ -258,16 +269,30 @@ body {
         max-width: 100%;
     }
 
+    /* button full width */
     .btn {
         width: 100%;
+        font-size: 16px;
+        padding: 14px;
     }
 
+    /* RIGHT SIDE CENTER FIX */
+    .hero-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ✅ CARD PERFECT CENTER */
     .card {
         width: 100%;
-        max-width: 100%;
+        max-width: 320px;   /* 👈 perfect mobile size */
+        margin: 0 auto;
         padding: 12px;
+        border-radius: 16px;
     }
 
+    /* GRID FIX */
     .options {
         grid-template-columns: repeat(2, 1fr);
         gap: 6px;
@@ -277,14 +302,26 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* BUTTON SIZE FIX */
     .options button {
         font-size: 13px;
         padding: 8px;
     }
 
+    /* IMAGE SIZE FIX */
     .options button img {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
+    }
+
+    /* salary text adjust */
+    .salary {
+        font-size: 11px;
+    }
+
+    /* result box */
+    .result h2 {
+        font-size: 24px;
     }
 }
 
