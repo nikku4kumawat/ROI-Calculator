@@ -938,7 +938,7 @@ input, select {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
     #step5 input {
         font-size: 13px;
@@ -953,5 +953,30 @@ input, select {
 
     #nextBtn {
         width: 100%;
+    }
+} */
+ @media (max-width: 600px) {
+
+    #step5 input {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .modal-footer {
+        display: flex;
+        flex-direction: row;   /* 👈 side by side */
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .modal-footer button {
+        width: 48%;            /* 👈 equal size */
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    #nextBtn {
+        width: 48%;
     }
 }
