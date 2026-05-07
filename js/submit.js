@@ -29,7 +29,7 @@ Name: ${name}
 Email: ${email}
 Phone: ${phone}`;
 
-        let whatsappNumber = "918769091545";
+        let whatsappNumber = "919950000686";
 
         window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, "_blank");
 
