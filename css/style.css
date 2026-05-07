@@ -938,23 +938,6 @@ input, select {
     cursor: pointer;
 }
 
-/* @media (max-width: 600px) {
-
-    #step5 input {
-        font-size: 13px;
-        padding: 12px;
-    }
-
-    .modal-footer {
-        flex-direction: column;
-        gap: 10px;
-        align-items: stretch;
-    }
-
-    #nextBtn {
-        width: 100%;
-    }
-} */
  @media (max-width: 600px) {
 
     #step5 input {
@@ -967,16 +950,17 @@ input, select {
         flex-direction: row;   /* 👈 side by side */
         justify-content: space-between;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
     }
 
     .modal-footer button {
-        width: 48%;            /* 👈 equal size */
-        padding: 10px 0;
-        font-size: 14px;
+        /* width: 48%;            👈 equal size */
+        padding: 8px 0;
+        font-size: 13px;
+        width: 120px; 
     }
 
     #nextBtn {
-        width: 48%;
+        width: 120px;
     }
 }
