@@ -947,14 +947,13 @@ input, select {
 
     .modal-footer {
         display: flex;
-        flex-direction: row;   /* 👈 side by side */
+        flex-direction: row;   
         justify-content: space-between;
         align-items: center;
         gap: 12px;
     }
 
     .modal-footer button {
-        /* width: 48%;            👈 equal size */
         padding: 8px 0;
         font-size: 13px;
         width: 120px; 
