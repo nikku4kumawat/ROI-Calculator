@@ -465,14 +465,14 @@ footer .container {
     align-items: center;
     justify-content: center;
     
-    padding: 10px 25px;
-    min-width: 120px;   /* 👈 dono same width */
-    height: 45px;       /* 👈 same height */
+    padding: 8px 18px;
+    min-width: 100px;   /* 👈 dono same width */
+    height: 40px;       /* 👈 same height */
 
     border-radius: 10px;
     cursor: pointer;
-    font-weight: 300;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 15px;
     transition: all 0.3s ease;
 }
 
