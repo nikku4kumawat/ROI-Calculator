@@ -459,18 +459,28 @@ footer .container {
     margin-top: 20px;
 }
 
+.cancel-btn,
+.next-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 10px 25px;
+    min-width: 120px;   /* 👈 dono same width */
+    height: 45px;       /* 👈 same height */
 
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Cancel Button */
 .cancel-btn {
-    display: inline-block;
     background-color: #f1f4ff !important;
     color: #2b6cff !important;
     border: 1px solid #2b6cff !important;
-    padding: 10px 25px;
-    border-radius: 10px;
-    cursor: pointer;
-    /* font-weight: 500; */
-    /* font-size: 15px; */
-    transition: all 0.3s ease;
 }
 
 .cancel-btn:hover {
@@ -478,20 +488,17 @@ footer .container {
     color: #fff !important;
 }
 
+/* Next Button */
 .next-btn {
-    background: #2b6cff; 
+    background: #2b6cff;
     color: #fff;
     border: none;
-    padding: 10px 25px;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 .next-btn:disabled {
     background: #ccc;
     cursor: not-allowed;
 }
-
 /* MOBILE */
 @media (max-width: 768px) {
     .uni-grid {
